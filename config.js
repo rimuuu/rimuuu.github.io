@@ -3,7 +3,7 @@
 module.exports = {
   url: "https://rimuuu.github.io",
   pathPrefix: "/",
-  title: "Blog by John Doe",
+  title: "Sori's develog ",
   subtitle:
     "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
   copyright: "© All rights reserved.",
@@ -26,20 +26,19 @@ module.exports = {
     },
   ],
   author: {
-    name: "John Doe",
+    name: "Sori Kim",
     photo: "/photo.jpg",
-    bio:
-      "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+    bio: "Perfectly Imperfect",
     contacts: {
-      email: "",
+      email: "soriosie@gmail.com",
       facebook: "#",
       telegram: "#",
       twitter: "#",
-      github: "#",
+      github: "https://github.com/rimuuu",
       rss: "",
       vkontakte: "",
       linkedin: "#",
-      instagram: "#",
+      instagram: "x.xiaori",
       line: "",
       gitlab: "",
       weibo: "",
