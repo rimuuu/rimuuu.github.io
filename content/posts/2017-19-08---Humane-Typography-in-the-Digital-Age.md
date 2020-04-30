@@ -1,5 +1,5 @@
 ---
-title: Gatsby 블로그 만들기
+title: "[session] Git 작업흐름과 기본명령어"
 date: "2020-04-30"
 template: "post"
 draft: false
@@ -18,65 +18,101 @@ socialImage: "/media/42-line-bible.jpg"
 - [Loss of humanity through transitions](#loss-of-humanity-through-transitions)
 - [Chasing perfection](#chasing-perfection)
 
-## hello 히히히 나는 왜 안나와
+# 1. Git을 사용해야 하는 이유
 
-나오나?
+Git은 어떤 프로젝트를 진행할때 **‘시간 여행이 가능한 평행 우주를 만드는것’** 과 같다. 메인작업을 진행하면서 실험적인 작업을 해보고 싶을때, 깃이 없다면 폴더를 통째로 복사해서 각각에서 진행을 해야겠지만 깃에서는 폴더 안에서 여러 평행우주를 생성해서 그 우주들 안에서 각각 다른 버전으로 프로젝트를 관리할 수 있다. 혹은 개발을 하다가 어떤 단계로 되돌아가고 싶을때 단순히 ctrl + Z 차원이 아니라 아예 그때 그 시간으로 되돌아가서 작업을 할 수 있다.이렇게 시공간을 넘나들 수 있는 🐶쩌는 능력을 사용하지 않을 이유가 없음!
 
-The typography of this industrial age was no longer handcrafted. Mass production and profit became more important. Quantity mattered more than the quality. The books and printed works in general lost a part of its humanity. The typefaces were not produced by craftsmen anymore. It was the machines printing and tying the books together now. The craftsmen had to let go of their craft and became a cog in the process. An extension of the industrial machine.
+=> 이 평행우주를 어떻게 만들고 사용할까? 깃을 생성하고 현재 시점에서 타임캡슐(커밋)에 묻어놓으면 된다.
 
-But the victory of the industrialism didn’t mean that the craftsmen were completely extinct. The two worlds continued to coexist independently. Each recognising the good in the other — the power of industrialism and the humanity of craftsmanship. This was the second transition that would strip typography of a part of its humanity. We have to go 500 years back in time to meet the first one.
+<br>
 
-## The first transition
+# 2.Git Basic Work Flow
 
-A similar conflict emerged after the invention of the first printing press in Europe. Johannes Gutenberg invented movable type and used it to produce different compositions. His workshop could print up to 240 impressions per hour. Until then, the books were being copied by hand. All the books were handwritten and decorated with hand drawn ornaments and figures. A process of copying a book was long but each book, even a copy, was a work of art.
+## Git basis
 
-The first printed books were, at first, perceived as inferior to the handwritten ones. They were smaller and cheaper to produce. Movable type provided the printers with flexibility that allowed them to print books in languages other than Latin. Gill describes the transition to industrialism as something that people needed and wanted. Something similar happened after the first printed books emerged. People wanted books in a language they understood and they wanted books they could take with them. They were hungry for knowledge and printed books satisfied this hunger.
+Git을 사용해서 파일 버전 관리를 할때 파일은 다음 3개의 상태중 하나의 상태에 있게 된다.
 
-![42-line-bible.jpg](/media/42-line-bible.jpg)
+![](https://images.velog.io/images/rimu/post/4af4be68-2648-47d5-9f5f-4b77edd13313/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-04-30%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%201.13.22.png)
 
-_The 42–Line Bible, printed by Gutenberg._
+`Modified`
+Modified file은 이름 그대로 수정된 file이다. 하지만 아직 "commited" 되지 않은 상태의 file을 말한다.
 
-But, through this transition, the book lost a large part of its humanity. The machine took over most of the process but craftsmanship was still a part of it. The typefaces were cut manually by the first punch cutters. The paper was made by hand. The illustrations and ornaments were still being hand drawn. These were the remains of the craftsmanship that went almost extinct in the times of Eric Gill.
+`Staged`
+Staged file은 modified file에서 한단계 더 나아가서 곧 commit 될거라고 mark 해놓은 상태이다. 즉 modified 와 committed의 중간 상태라고 할 수 있다.
+이렇게 중간 상태가 존재 하는 이유는, commit 하기전에 중간 상태를 저장할 수 있도록 하기 위함입니다. Commit을 하면 commit history에 남기도 하고, 혹시 추가 수정 사항이 있거나 다시 되돌려야 할때 까다롭기 때문에 (commit 후에도 다시 되돌리는게 가능은 함) commit 전에 중간 상태에 저장할 수 있도록 하는 것이다. 즉, commit은 해당 개발이 완전 완료 됬을때 하는 것이기 때문에, 아직 완료는 안되었지만 그래도 중간 상태를 저장할 필요가 있을때 staging을 사용하는 것.
 
-## The digital age
+`Committed`
+수정 사항들이 git에 저장이 된 상태를 "committed" 라고 하고 이러한 행위를 "commit" 한다고 표현한다.
 
-The first transition took away a large part of humanity from written communication. Industrialisation, the second transition described by Eric Gill, took away most of what was left. But it’s the third transition that stripped it naked. Typefaces are faceless these days. They’re just fonts on our computers. Hardly anyone knows their stories. Hardly anyone cares. Flicking through thousands of typefaces and finding the “right one” is a matter of minutes.
+### Git Basic Work Flow
 
-> In the new computer age the proliferation of typefaces and type manipulations represents a new level of visual pollution threatening our culture. Out of thousands of typefaces, all we need are a few basic ones, and trash the rest.
 >
-> — Massimo Vignelli
 
-Typography is not about typefaces. It’s not about what looks best, it’s about what feels right. What communicates the message best. Typography, in its essence, is about the message. “Typographical design should perform optically what the speaker creates through voice and gesture of his thoughts.”, as El Lissitzky, a famous Russian typographer, put it.
+1. 소스코드 전체를 다운로드 받는다 (전문적인 언어로는 "git repository를 checkout 한다").
+2. 소스코드 파일들을 수정 합니다. 즉 개발을 한다.
+3. 수정한 파일들을 stage 한다.
+4. 그리고 계속 해서 소스코드 파일들을 수정해 나간다.
+   해당 작업이 완료될때까지, 즉 commit 할 준비가 될때까지, 3,4번을 반복합니다.
+5. 완료되면 commit 한다.
 
-## Loss of humanity through transitions
+<br>
+<br>
 
-Each transition took away a part of humanity from written language. Handwritten books being the most humane form and the digital typefaces being the least. Overuse of Helvetica is a good example. Messages are being told in a typeface just because it’s a safe option. It’s always there. Everyone knows it but yet, nobody knows it. Stop someone on the street and ask him what Helvetica is? Ask a designer the same question. Ask him where it came from, when, why and who designed it. Most of them will fail to answer these questions. Most of them used it in their precious projects but they still don’t spot it in the street.
+## Basic Git Commands
 
-<figure>
-	<blockquote>
-		<p>Knowledge of the quality of a typeface is of the greatest importance for the functional, aesthetic and psychological effect.</p>
-		<footer>
-			<cite>— Josef Mueller-Brockmann</cite>
-		</footer>
-	</blockquote>
-</figure>
+> `git init`
+> 프로젝트를 git repository로 만들기 위해서 사용하는 명령어. 여기서 프로젝트(project)라 함은 개발하고자 하는 소스코드들이 있는 디렉토리를 말한다. git init을 해서 git repo로 만들어야 git으로 버전 관리가 시작된다.
 
-Typefaces don’t look handmade these days. And that’s all right. They don’t have to. Industrialism took that away from them and we’re fine with it. We’ve traded that part of humanity for a process that produces more books that are easier to read. That can’t be bad. And it isn’t.
+> `git add`
+> 수정 사항들, 즉 modified 파일들을 staged 상태로 옮기는 명령어. 그리고 git repo에 새로 추가된 파일들을 staged 상태로 옮길때도 사용된다. 새로 추가된 파일들은 "untracked" 파일 이라고 하는데, git에서는 이들도 수정 사항이라고 본다.
 
-> Humane typography will often be comparatively rough and even uncouth; but while a certain uncouthness does not seriously matter in humane works, uncouthness has no excuse whatever in the productions of the machine.
->
-> — Eric Gill
+> `git commit`
+> staged 된 파일들을 commit 할때 사용하는 명령어
 
-We’ve come close to “perfection” in the last five centuries. The letters are crisp and without rough edges. We print our compositions with high–precision printers on a high quality, machine made paper.
+> `git diff`
+> 개발 하고 있는 파일에 어떤 수정 사항들이 적용되었는지 보고싶을때 사용하는 명령어 입니다. 참고로 staged 된 수정 사항들은 git diff로 볼 수 없고, Modified 된 파일들만 git diff로 볼 수 있다.
+> (즉 git add 전에만 사용 가능 )
 
-![type-through-time.jpg](/media/type-through-time.jpg)
+> `git status`
+> 현재 상태를 보여주는 명령어. 어떠한 파일들이 modified가 되었고 어떠한 파일들이 staged가 되었는지 등의 전체적인 상황을 보여준다
 
-_Type through 5 centuries._
+> `git log`
+> Commit 내역들을 보여주고 Commit history라고도 한다. git log를 통해 이제까지 커밋 내역들을 전부 볼 수 있다. 다만 출력되는 포맷이 보기가 쉽지가 않아서 tig 같은 tool을 사용하면 훨씬 편리하다.
 
-We lost a part of ourselves because of this chase after perfection. We forgot about the craftsmanship along the way. And the worst part is that we don’t care. The transition to the digital age made that clear. We choose typefaces like clueless zombies. There’s no meaning in our work. Type sizes, leading, margins… It’s all just a few clicks or lines of code. The message isn’t important anymore. There’s no more “why” behind the “what”.
+> `git rm`
+> 원하는 파일을 git repo에서 삭제한다.
 
-## Chasing perfection
+> `git mv`
+> 원하는 파일을 git repo 상에서 이동 시킬때 사용한다. 주로 rename 할때 사용 된다.
 
-Human beings aren’t perfect. Perfection is something that will always elude us. There will always be a small part of humanity in everything we do. No matter how small that part, we should make sure that it transcends the limits of the medium. We have to think about the message first. What typeface should we use and why? Does the typeface match the message and what we want to communicate with it? What will be the leading and why? Will there be more typefaces in our design? On what ground will they be combined? What makes our design unique and why? This is the part of humanity that is left in typography. It might be the last part. Are we really going to give it up?
+> `git branch`
+> Branch를 생성할 때 사용된다. Branch에 관해서는 아래를 참고하기
+
+> `git checkout`
+> 어떤 branch를 checkout 할때 사용되는 명령어
+
+<br>
+
+# 4. Branch & Merging
+
+Branch는 나뭇가지 혹은 분점 을 뜻한다. 즉 기본이 되는 큰 줄기가 있고 그 줄기로 부터 옆으로 가지가 나는걸 의미하는데, Git의 branch 모델이 바로 이러한 구조이다. 먼저 git에서 기준이 되는 `master branch`가 있다. 그리고 각 개발자는 master branch를 checkout 먼저 하고, master branch로 부터 자신만의 branch를 만든다. 이걸 `feature branch`라고 한다. 그리고 feature branch를 기반으로 개발을 한 후 개발이 완료가 되고 commit을 하면 자신의 `feature branch`를 다시 `master branch`로 합하게 된다. 이렇게 합하는 과정을 `merge` 한다고 말한다.
+
+### branch 활용하는법 정리
+
+> 1.  Matser branch를 check out 한다.
+
+2. 자신만의 feature branch를 만든다.
+3. Feature branch에서 개발을 한다.
+4. 완료되면 commit 한다.
+5. Master branch에 feature branch를 merge 한다.
+
+![](https://images.velog.io/images/rimu/post/e2a71e10-2a9d-4edf-aa8c-ff63fe3e584c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-04-30%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%201.38.47.png)
+
+## Basic Git Branch Commands
+
+`git branch 브랜치명`
+
+`git checkout feature/login`
+브랜치 이동하기
 
 _Originally published by [Matej Latin](http://matejlatin.co.uk/) on [Medium](https://medium.com/design-notes/humane-typography-in-the-digital-age-9bd5c16199bd?ref=webdesignernews.com#.lygo82z0x)._
