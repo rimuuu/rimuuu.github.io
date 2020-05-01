@@ -27,7 +27,7 @@ module.exports = {
   ],
   author: {
     name: "Sori Kim",
-    photo: "/photo.jpg",
+    photo: "/profile.png",
     bio: "Perfectly Imperfect",
     contacts: {
       email: "soriosie@gmail.com",
