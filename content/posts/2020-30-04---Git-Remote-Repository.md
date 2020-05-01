@@ -3,7 +3,7 @@ title: "[Git] Git Remote 저장소와 Local 저장소 연결하여 관리하기 
 date: "2020-04-30T04:12:03.284Z"
 template: "post"
 draft: false
-slug: "git/200430"
+slug: "git/200430/2"
 category: "Git"
 tags:
   - "Git"
@@ -22,6 +22,7 @@ Git은 개인적으로 코드의 변경사항을 추적하고 프로젝트를 �
 이 원격저장소를 위해 주로 사용되는 것은 `Github`인데, git을 효율적으로 관리하기 위한 원격서버이자 클라우드 역할을 담당한다. 평소에는 자신의 PC의 Local repository에서 작업하다가 자신의 소스코드를 공개하고 싶을 때, 혹은 다른사람들과 협업을 시작해야할때 Remote repository에 개발한 소스코드를 업로드한다. (`Push`) 내 소스코드를 올리는 것 뿐만 아니라, Remote repository에서 다른 사람의 소스코드를 자신의 Local repository로 가져올 수도 있다. (`Pull`)
 
 ![](https://images.velog.io/images/rimu/post/7368df43-dd64-4d1e-abf8-b5a3d228c970/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-04-30%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%208.27.33.png)
+<br>
 
 ![](https://images.velog.io/images/rimu/post/cc53a881-aac4-438b-9a6f-ad49b8b1bfa8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-04-30%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%208.30.40.png)
 
@@ -30,7 +31,7 @@ Git은 개인적으로 코드의 변경사항을 추적하고 프로젝트를 �
 1. github에서 새로운 레파지토리를 생성한다.
 
 2. `$ git remote add origin 레파지토리주소`
-   가령 내가 만든 westagram이라는 레파지토리를 로컬과 연결하고 싶다면
+   가령 내가 만든 westagram이라는 레파지토리를 로컬과 연결하고 싶다면 <br>
    \$ git remote add origin https://github.com/rimuuu/westagram.git 이라고 입력한다.
    참고로 여기서 origin은 큰 의미 없는 git을 구분하기 위해서 사용하는 이름표 같은 것이다.
    내가 원하는 아무 단어로 바꿔도 아무 상관없다.
@@ -75,8 +76,8 @@ Git은 개인적으로 코드의 변경사항을 추적하고 프로젝트를 �
 
 ---
 
-깃 짱짱맨! 이해하고 나니 깃 넘 재밌다.ㅎㅎㅎ (아직까지는)
-이제 1일 1커밋 가보즈아~
+깃 짱짱맨! 이해하고 나니 깃 넘 재밌다.ㅎㅎㅎ (아직까지는🙄?) <br>
+이제 1일 1커밋 가보즈아~<br>
 ![](https://images.velog.io/images/rimu/post/83839fa9-f5d0-43a5-8390-3c24d2065ded/IMG_1840.GIF)
 
 <!-- - [The first transition](#the-first-transition)

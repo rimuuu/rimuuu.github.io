@@ -1,9 +1,9 @@
 ---
-title: "Git 작업흐름과 기본명령어"
-date: "2020-04-30T04:12:03.284Z"
+title: "[Git] Git 작업흐름과 기본명령어"
+date: "2020-04-30T00:12:03.284Z"
 template: "post"
 draft: false
-slug: "git/200430"
+slug: "git/200430/1"
 category: "Git"
 tags:
   - "Git"
