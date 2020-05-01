@@ -1,9 +1,9 @@
 ---
 title: "[Gatsby] Gatsby 블로그 만들기 "
-date: "2020-05-01T12:12:03.284Z"
+date: "2020-05-01T04:12:03.284Z"
 template: "post"
 draft: false
-slug: "gatsby"
+slug: "gatsby/200501"
 category: "gatsby"
 tags:
   - "gatsby"
