@@ -122,4 +122,6 @@ Branch는 나뭇가지 혹은 분점 을 뜻한다. 즉 기본이 되는 큰 줄
 `git branch -D feature/login`
 브랜치 삭제하기
 
-<!-- _Originally published by [Matej Latin](http://matejlatin.co.uk/) on [Medium](https://medium.com/design-notes/humane-typography-in-the-digital-age-9bd5c16199bd?ref=webdesignernews.com#.lygo82z0x)._ -->
+<br>
+
+_이글은 위코드 부트캠프의 소중한 공부자료를 보고 정리한 내용입니다._

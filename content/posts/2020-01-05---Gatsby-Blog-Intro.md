@@ -187,4 +187,4 @@ gatsby에서 markdown 형식 파일들을 올리고 배포 명령어를 입력�
 - [Loss of humanity through transitions](#loss-of-humanity-through-transitions)
 - [Chasing perfection](#chasing-perfection) -->
 
-<!-- _Originally published by [Matej Latin](http://matejlatin.co.uk/) on [Medium](https://medium.com/design-notes/humane-typography-in-the-digital-age-9bd5c16199bd?ref=webdesignernews.com#.lygo82z0x)._ -->
+_Originally published by [Yeri Kim](#) on [Blog](https://yeri-kim.github.io/posts/how-to-install-gatsby/)._

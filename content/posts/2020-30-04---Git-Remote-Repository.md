@@ -80,9 +80,6 @@ Git은 개인적으로 코드의 변경사항을 추적하고 프로젝트를 �
 이제 1일 1커밋 가보즈아~<br>
 ![](https://images.velog.io/images/rimu/post/83839fa9-f5d0-43a5-8390-3c24d2065ded/IMG_1840.GIF)
 
-<!-- - [The first transition](#the-first-transition)
-- [The digital age](#the-digital-age)
-- [Loss of humanity through transitions](#loss-of-humanity-through-transitions)
-- [Chasing perfection](#chasing-perfection) -->
+<br>
 
-<!-- _Originally published by [Matej Latin](http://matejlatin.co.uk/) on [Medium](https://medium.com/design-notes/humane-typography-in-the-digital-age-9bd5c16199bd?ref=webdesignernews.com#.lygo82z0x)._ -->
+_이글은 위코드 부트캠프의 git 세션을 듣고 정리한 내용입니다._
