@@ -7,6 +7,7 @@ slug: "react/200504"
 category: "react"
 tags:
   - "react"
+  - "web"
 description: ""
 socialImage: "/media/42-line-bible.jpg"
 ---
