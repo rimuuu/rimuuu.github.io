@@ -52,5 +52,5 @@ SPA는 서버에서 데이터를 받아와야 할 때마다, 요청을 보내서
 
 
 
-_이 글은 유투브 '[얄팍한 코딩사전]'(https://www.youtube.com/watch?v=iE29lbjbow0)의 영상을 보고 정리한 내용입니다 ._
+_이 글은 유투브 [얄팍한 코딩사전](https://www.youtube.com/watch?v=iE29lbjbow0)의 영상을 보고 정리한 내용입니다 ._
 
