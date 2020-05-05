@@ -13,15 +13,13 @@ socialImage: "/media/42-line-bible.jpg"
 ---
 
 ## 리액트(react.js)를 알아보자구~
+![react_graph](https://user-images.githubusercontent.com/60246689/81028739-a667b900-8ebd-11ea-8a45-8e767be62efc.png)
 
 리액트는 페이스북과 인스타그램에서 사용자 경험을 향상하기 위해 만든 라이브러리로, 브라우저가 동적으로 기능할 때 서버에서 코드를 받아 다시 렌더링해야되는 문제(server side rendering)를 해결하기 위해 만들어졌다.
+방대한 자료와 유연함이라는 장점 때문에 최근 몇년 간 가장 인기 있는 프론트엔드 프레임워크 자리를 지키고 있다.
 
-## 리액트 특징
+## 리액트의 특징 
 
-### 프레임워크가 아니다.
-
-사용자 인터페이스 라이브러리이다.
-리액트는 UI 컴포넌트를 만드는 일만 하고 코드의 캡슐화가 쉬워서 재사용성을 높여준다. 그리고 유연하다는 특징이 있어서 여러 자바스크립트 프레임워크나 라이브러리와 함께 쓸 수 있다. 그래서 리액트를 사용하기 위해서 기존 코드를 모두 바꿀 필요 없이 필요한 부분부터 조금씩 사용이 가능하다.
 
 ### 컴포넌트 기반의 화면 구성
 
@@ -48,9 +46,8 @@ JSX는 리액트에서 커스텀한 자바스크립트 확장 문법인데, 자�
 
 ### How do we make components ?
 
-1.js파일 하나를 생성한다.
+1 .js파일 하나를 생성한다.
 그리고 반드시 react를 임포트 해줘야한다. 그렇지 않으면 리액트는 이 파일에서 jsx가 있는 컴포넌트를 사용한다는걸 인식하지 못한다.
-(jsx는 자바스크립트가 html을 품고 있는 구조의 리액트 고유의 문법)
 
 ```javascript
 import React from "react";
@@ -113,5 +110,10 @@ export default App;
 그리고 내가 원하는 위치에서 `Potato` 컴포넌트를 사용해주면 끝이다.
 다음 포스팅에서는 본격적으로 컴포넌트에 데이터를 전달하는 방법에 대해 알아보겠다.
 
+<br>
+<br>
+<br>
+
 _[개발자스럽다](https://blog.gaerae.com/2016/04/hello-react.html)_
+<br>
 _[NomadCoderAcademy](https://academy.nomadcoders.co/courses/enrolled/216871)_
