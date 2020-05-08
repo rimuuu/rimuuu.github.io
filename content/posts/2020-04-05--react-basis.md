@@ -1,5 +1,5 @@
 ---
-title: "[React] 안녕, 리액트?"
+title: "[React Basis] 안녕, 리액트? + 컴포넌트를 만드는 첫번째 방법: Function Component"
 date: "2020-05-04T05:12:03.284Z"
 template: "post"
 draft: false
@@ -13,13 +13,13 @@ socialImage: "/media/42-line-bible.jpg"
 ---
 
 ## 리액트(react.js)를 알아보자구~
+
 ![react_graph](https://user-images.githubusercontent.com/60246689/81028739-a667b900-8ebd-11ea-8a45-8e767be62efc.png)
 
 리액트는 페이스북과 인스타그램에서 사용자 경험을 향상하기 위해 만든 라이브러리로, 브라우저가 동적으로 기능할 때 서버에서 코드를 받아 다시 렌더링해야되는 문제(server side rendering)를 해결하기 위해 만들어졌다.
 방대한 자료와 유연함이라는 장점 때문에 최근 몇년 간 가장 인기 있는 프론트엔드 프레임워크 자리를 지키고 있다.
 
-## 리액트의 특징 
-
+## 리액트의 특징
 
 ### 컴포넌트 기반의 화면 구성
 
