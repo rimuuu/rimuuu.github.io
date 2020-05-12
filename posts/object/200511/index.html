@@ -115,6 +115,20 @@ console<span class="token punctuation">.</span>log<span class="token punctuation
 <p>이렇게 getter와 setter 메서드를 이용하면 객체에 fullName 이라는 가상의 프로퍼티가 생긴다. <br>
 가상의 프로퍼티는 읽고 쓸 수는 있지만 실제로 존재하지 않는다.</p>
 <p><strong>중요: getter와 setter 메서드는 호출할때 user.fullName = ‘Anne Marie’ 처럼 괄호를 사용하지 않는다. <br>문법적으로 프로퍼티의 값을 재할당하는 것처럼 보인다는걸 기억하자.</strong></p>
+<p>예시를 더 보면서 익숙하게 해보자. setter 메서드를 이용하면 입력된 값의 데이터 타입을 체크하고 원하는 데이터타입이 입력되었을때만 값이 갱신되게 하는 코드를 만들 수 있다.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token punctuation">{</span>
+  _age<span class="token operator">:</span> <span class="token number">37</span><span class="token punctuation">,</span>
+  <span class="token keyword">set</span> <span class="token function">age</span><span class="token punctuation">(</span><span class="token parameter">newAge</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> newAge <span class="token operator">===</span> <span class="token string">"number"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>_age <span class="token operator">=</span> newAge<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"You must assign a number to age."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+person<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">40</span><span class="token punctuation">;</span> <span class="token comment">//40</span>
+person<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token string">"40"</span><span class="token punctuation">;</span> <span class="token comment">//'You must assign a number to age.'</span></code></pre></div>
 <br>
 <h2 id="getter와-setter-똑똑하게-활용하기" style="position:relative;"><a href="#getter%EC%99%80-setter-%EB%98%91%EB%98%91%ED%95%98%EA%B2%8C-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0" aria-label="getter와 setter 똑똑하게 활용하기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>getter와 setter 똑똑하게 활용하기</h2>
 <p>getter와 setter를 실제 프로퍼티 값을 감싸는 래퍼(wrapper)처럼 사용한다면, 실제 프로퍼티 값을 직접적으로 수정하지 않고도 원하는대로 값을 통제할 수 있다.<br>
