@@ -73,18 +73,15 @@ view에서 action이 일어나면 -> 다시 dispatcher에 의해 store에 저장
 - store: application의 전체 state를 가지고 있는 객체.
   참고로 app에는 단 하나의 store를 갖고 있는 것이 좋음.
 - view: 리액트에서는 component라고 생각하면 된다.</code></pre></div>
+<br >
 <h2 id="2-redux의-주요-개념" style="position:relative;"><a href="#2-redux%EC%9D%98-%EC%A3%BC%EC%9A%94-%EA%B0%9C%EB%85%90" aria-label="2 redux의 주요 개념 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. redux의 주요 개념</h2>
-<ol>
-<li>
-<p>action</p>
+<h3 id="1-action" style="position:relative;"><a href="#1-action" aria-label="1 action permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. action</h3>
 <ul>
 <li>state(상태) 변화를 일으킬 수 있는 하나의 현상. <br />
 상태에 어떠한 변화가 필요하게 될 땐, 액션이란 것을 발생시킨다. <br />
 예를 들어 사용자의 입력, 웹 요청 완료 등 <br />
 action은 객체 형태를 취하고, 액션의 행동을 설명하는 type 프로퍼티를 반드시 갖는다.</li>
 </ul>
-</li>
-</ol>
 <div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx">action <span class="token operator">=</span> <span class="token punctuation">{</span>
     type<span class="token operator">:</span> <span class="token string">"ADD_MEMBER"</span>
 <span class="token comment">//액션이 어떤 행동을 하는지 정보. 리듀서를 분배할때 이걸 기준으로 나눈다.</span>
@@ -109,9 +106,8 @@ action은 객체 형태를 취하고, 액션의 행동을 설명하는 type 프�
   type<span class="token operator">:</span> <span class="token string">"CHANGE_INPUT"</span><span class="token punctuation">,</span>
   text<span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-<ol start="2">
-<li>reducer : 변화를 일으키는 함수. 두가지의 파라미터를 갖는다.</li>
-</ol>
+<br >
+<h3 id="2-reducer--변화를-일으키는-함수-두가지의-파라미터를-갖는다" style="position:relative;"><a href="#2-reducer--%EB%B3%80%ED%99%94%EB%A5%BC-%EC%9D%BC%EC%9C%BC%ED%82%A4%EB%8A%94-%ED%95%A8%EC%88%98-%EB%91%90%EA%B0%80%EC%A7%80%EC%9D%98-%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%EB%A5%BC-%EA%B0%96%EB%8A%94%EB%8B%A4" aria-label="2 reducer  변화를 일으키는 함수 두가지의 파라미터를 갖는다 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. reducer : 변화를 일으키는 함수. 두가지의 파라미터를 갖는다.</h3>
 <div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">function</span> <span class="token function">reducer</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> action</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// 상태 업데이트 로직</span>
   <span class="token keyword">return</span> alteredState<span class="token punctuation">;</span>
@@ -187,6 +183,7 @@ arr <span class="token operator">===</span> hello<span class="token punctuation"
 <li>State는 읽기 전용이다. 컴포넌트에서는 state를 참조만 할 수 있고, (setState처럼) 변경할 수는 없다. state를 변경하고 싶다면, Action을 dispatch(발행)해서 app의 state를 변경해야만 한다. 이렇게 해야 데이터의 흐름이 한 방향으로만 흐르게 된다.</li>
 <li>reducer는 pure function(순수 함수)으로 이뤄져야 한다. 순수 함수란 같은 입력 값을 넣으면 같은 출력 값을 내는 함수를 의미한다. reducer는 이전의 state와 action을 입력 받고, 이로 인해 변화한(next) state를 return한다. 즉, reducer는 action에 의해 state를 변경시키는 함수라고 생각하면 된다.</li>
 </ul>
+<br >
 <h2 id="4-react-redux" style="position:relative;"><a href="#4-react-redux" aria-label="4 react redux permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. react-redux</h2>
 <h3 id="connectoptionscounter" style="position:relative;"><a href="#connectoptionscounter" aria-label="connectoptionscounter permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>connect([…options])(Counter)</h3>
 <p>컴포넌트를 리덕스에 연결하는 또다른 함수를 반환한다.
