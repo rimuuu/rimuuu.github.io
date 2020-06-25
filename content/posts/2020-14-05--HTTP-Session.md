@@ -7,7 +7,7 @@ slug: "http/200514"
 category: "http"
 tags:
   - "http"
-description: "http 기초 세션을 듣고 http를 구성하는 구조와 http 메서드에 대해 정리했습니다. 🐳 "
+description: "HTTP는 기본적으로 요청(request)과 응답(response) 구조로 이루어져 있다."
 ---
 
 # 1. HTTP 핵심요소와 구조

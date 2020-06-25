@@ -1,6 +1,6 @@
 ---
-title: "[React Basis] Session #2 React router"
-date: "2020-05-12T02:12:03.284Z"
+title: "[React Basis] Session #2  React router"
+date: "2020-05-16T02:12:03.284Z"
 template: "post"
 draft: false
 slug: "react/200512/1"
@@ -8,27 +8,10 @@ category: "react"
 tags:
   - "react"
 
-description: ""
+description: "react에서 라우팅을 하는 두가지 방법 Link 컴포넌트와 withReact HOC에 대해 정리한다."
 ---
 
-## Wrap-up
-
-### react 프로젝트 초기세팅할때 폴더구성 방법
-
-src
-
-- component; Header / Footer
-  페이지마다 반복되는 요소들은 컴포넌트 폴더안에 넣고 재사용 하기
-
-- images
-
-- pages; Login / Main
-  실제 페이지별로 컴포넌트 구분
-
-- styles; reset.scss / common.scss  
-  그 외 컴포넌트 관련된 스타일 파일은 넣을 필요 없음
-
-## React Router
+## 1. React Router
 
 react는 다른 프레임워크들과 달리 라우팅을 위한 로직이 들어있지 않아서
 `React Router` 라는 기능을 추가해서 구현해야한다. <br>
@@ -39,8 +22,6 @@ react는 다른 프레임워크들과 달리 라우팅을 위한 로직이 들�
 ```
 npm install react-router-dom --save
 ```
-
-패키지를 설치할때 save 옵션을 주면 package.json 파일의 dependencies 항목에 설치된 패키지 이름과 버전이 자동으로 추가된다.
 
 ### react-router 사용
 
@@ -88,7 +69,7 @@ export default Routes;
 
 Route 이동하는 방법은 기본적으로 두 가지가 있는데, 바로 `Link` 컴포넌트를 사용한는 방법과 `withRouter HOC`를 이용하는 방법이다.
 
-#### Link 컴포넌트를 사용하는 방법
+#### 1) Link 컴포넌트를 사용하는 방법
 
 Link 컴포넌트는 react-router-dom에서 제공하는 컴포넌트로, DOM에서 `<a>`로 변환이 된다. <br>
 그래서 Link 컴포넌트는 남발해서 사용하는 게 아니라 상황에 맞게 사용을 해야한다. <br>
@@ -96,10 +77,10 @@ Link 컴포넌트는 react-router-dom에서 제공하는 컴포넌트로, DOM에
 
 이럴때는 바로 아래에서 설명할 withRouter HOC를 이용해서 구현하면 된다.
 
-#### withRouter HOC로 구현하는 방법
+#### 2) withRouter HOC로 구현하는 방법
 
 이 방법은 Link를 사용하는게 아니라, 요소에 onClick 이벤트를 달아서 이동하고 싶은 곳으로 넘기는 방법이다. <br>
-'로그인'이라는 버튼을 클릭했을때 onClick 이벤트가 실행되도록 goToMain()이라는 함수를 값으로 줬다.
+'로그인'이라는 버튼을 클릭했을때 onClick 이벤트가 실행되도록 `goToMain()`이라는 함수를 값으로 줬다.
 그리고 이 함수의 실행 내용을 보면, <br>
 this.props의 history에 접근해서 이동하는 방식을 취하고 있고
 push 메서드에 이동할 path를 인자로 넘겨줘서 해당 라우트로 이동할 수 있게 된다.
@@ -113,7 +94,6 @@ export class Login extends React.Component {
 
   goToMain() {
     this.props.history.push("/main");
-    // console.log("this.props: ", this.props);
   }
 
   render() {
@@ -131,8 +111,13 @@ export class Login extends React.Component {
 
 이 컴포넌트에서 props에 route 정보(history)를 받으려면 export하는 class에 withRouter로 줘야한다. 이렇게 withRouter같이 해당 컴포넌트를 감싸주는 것을 `higher-order component(이하 HOC)` 라고 한다.
 
-HOC는 react에서 고급 기능인데, (컴포넌트의 공통부분을 구현하는 패턴) 간단히 설명하면 HOC는 함수입니다. 그런데 컴포넌트를 인자로 받고, 컴포넌트를 return하는 함수이다.
+HOC는 react에서 컴포넌트의 공통부분을 구현하는 패턴을 만드는 일종의 고급 기능인데, 컴포넌트를 인자로 받고 리턴하는 함수이다. 이 부분은 아직 배우기 어려운 내용이라 이번에는 react-router에서 제공하는 withRouter라는 HOC를 사용하고, 우리는 props에서 라우팅 정보만 편하게 받는 식으로 사용하고 나중에 심화적인 부분을 공부해야겠다.
+그리고 아직 history나 push, bind 메소드같은게 생소하지만 대략적으로 이런 흐름을 통해 라우팅이 이루어질 수 있다는것만 기억하자.
 
-이번에는 react-router에서 제공하는 withRouter라는 HOC를 사용하고, 우리는 props에서 라우팅 정보만 편하게 받으면 된다.
+<br>
+<br>
+<br>
+<br>
+<br>
 
-아직 history나 push, bind 메소드같은게 생소하지만 대략적으로 이런 흐름을 통해 라우팅이 이루어질 수 있다는것만 기억하자.
+_이글은 wecode bootcamp의 멘토 [예리님 블로그](https://yeri-kim.github.io/posts/react-jsx/) 내용과 리액트 세션을 학습하고 정리한 포스팅입니다._
