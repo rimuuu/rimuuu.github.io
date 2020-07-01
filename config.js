@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: '/',
   title: 'Sori\'s develog ',
   subtitle:
-    'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    'Junior Front-End Web Developer',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
@@ -28,23 +28,13 @@ module.exports = {
   author: {
     name: 'Sori Kim',
     photo: '/profile.png',
-    bio: 'Perfectly Imperfect',
+    bio: '',
     contacts: {
       email: 'soriosie@gmail.com',
-      facebook: '#',
-      telegram: '#',
       twitter: '#',
       github: 'https://github.com/sori-kim',
-      rss: '',
-      vkontakte: '',
       linkedin: '#',
       instagram: 'x.xiaori',
-      line: '',
-      gitlab: '',
-      weibo: '',
-      codepen: '',
-      youtube: '',
-      soundcloud: '',
     },
   },
 };

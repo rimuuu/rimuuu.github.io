@@ -4,9 +4,9 @@ date: "2020-05-11T01:12:03.284Z"
 template: "post"
 draft: false
 slug: "object/200511"
-category: "JavaScript"
+category: "javascript"
 tags:
-  - "JavaScript"
+  - "javascript"
 
 description: "자바스크립트에서 프로퍼티는 크게 데이터 프로퍼티(data property)와 접근자 프로퍼티(accessor property) 라는 두가지 종류로 나뉜다. 이번 포스팅에서 새롭게 정리해볼 주제는 접근자 프로퍼티 (accessor property)이다."
 ---

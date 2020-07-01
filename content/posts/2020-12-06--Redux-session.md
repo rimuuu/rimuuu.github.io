@@ -4,9 +4,9 @@ date: "2020-06-12T01:00:03.284Z"
 template: "post"
 draft: false
 slug: "redux/200612"
-category: "redux"
+category: "react"
 tags:
-  - "redux"
+  - "react"
 description: "Redux에 대한 소개 세션과 블로그 자료를 보고 공부한 내용을 정리했습니다. "
 ---
 

@@ -4,9 +4,9 @@ date: "2020-05-08T01:12:03.284Z"
 template: "post"
 draft: false
 slug: "object/200508/"
-category: "JavaScript"
+category: "javaScript"
 tags:
-  - "JavaScript"
+  - "javaScript"
 
 description: "객체는 키(key)-값(value) 쌍으로된 데이터의 모음으로, 순서에 상관없이 저장이 된다. 그래서 배열처럼 순서대로 index로 접근하는게 아니라 key로 데이터에 접근한다.
 키는 마치 특정 값을 갖고 있는 변수 같은 역할을 해서, 해당 키로 프로퍼티에 어떤 값이 저장되었는지 알 수 있다."

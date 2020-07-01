@@ -4,9 +4,9 @@ date: "2020-04-30T04:12:03.284Z"
 template: "post"
 draft: false
 slug: "git/200430/2"
-category: "Git"
+category: "git"
 tags:
-  - "Git"
+  - "git"
   # - "Typography"
   # - "Web Development"
 description: "앞서 살펴봤던 Git의 저장소(repository)는 두가지 종류가 있는데, `Remote repository`와 `Local repository`가 바로 그것이다.  

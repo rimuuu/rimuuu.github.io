@@ -4,9 +4,9 @@ date: "2020-04-30T08:12:03.284Z"
 template: "post"
 draft: false
 slug: "git/200430/3"
-category: "Git"
+category: "git"
 tags:
-  - "Git"
+  - "git"
   # - "Typography"
   # - "Web Development"
 description: "master브랜치에서 분화하여 기능별로 작업한 branch들이 최종적으로 개발이 완료되면 master브랜치에 합체를 해야한다.

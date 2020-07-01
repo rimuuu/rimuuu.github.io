@@ -7,8 +7,6 @@ slug: "gatsby/200501"
 category: "gatsby"
 tags:
   - "gatsby"
-  # - "Typography"
-  # - "Web Development"
 description: "드디어 나도 만들었다 정적 블로그...
 개발 공부 아예 처음 시작했을때 시도 해봤다가 정말 뭐가 뭔지 모르겠어서 한 번 절망하고,
 그 후에 위코드 개강 전에 벨로그로 블로그 쓰기 시작하다 답답해서 다시 한 번 각잡고 도전해봤다가 또 실패했었다."

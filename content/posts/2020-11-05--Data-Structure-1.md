@@ -3,10 +3,10 @@ title: "[Data Structure] #1. Intro, Array & Tuple "
 date: "2020-05-11T02:12:03.284Z"
 template: "post"
 draft: false
-slug: "db/200511"
-category: "Data Structure"
+slug: "data/200511"
+category: "data-structure"
 tags:
-  - "Data Structure"
+  - "data-structure"
 
 description:
   "자료 구조란 데이터에 편하게 접근하고 조작하기 위한 데이터를 저장, 조작하는 방법으로, 상황과 문맥에 맞게 데이터를 담을 수 있는 적절한 구조를 말한다.

@@ -5,7 +5,8 @@ import Contacts from './Contacts';
 import Copyright from './Copyright';
 import Menu from './Menu';
 import styles from './Sidebar.module.scss';
-import { useSiteMetadata } from '../../hooks';
+import { useSiteMetadata, useTagsList } from '../../hooks';
+import Tags from '../Post/Tags';
 
 type Props = {
   isIndex?: boolean,
@@ -13,6 +14,7 @@ type Props = {
 
 const Sidebar = ({ isIndex }: Props) => {
   const { author, copyright, menu } = useSiteMetadata();
+  const tags = useTagsList();
 
   return (
     <div className={styles['sidebar']}>
@@ -22,6 +24,11 @@ const Sidebar = ({ isIndex }: Props) => {
         <Contacts contacts={author.contacts} />
         <Copyright copyright={copyright} />
       </div>
+      <Tags
+          tags={tags.map((tag) => tag.fieldValue)}
+          tagSlugs={tags.map((tag) => `/tag/${tag.fieldValue}`)}
+          inSidebar
+        />
     </div>
   );
 };

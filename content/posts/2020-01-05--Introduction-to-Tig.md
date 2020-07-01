@@ -4,20 +4,14 @@ date: "2020-05-01T05:12:03.284Z"
 template: "post"
 draft: false
 slug: "git/200501/2"
-category: "Git"
+category: "git"
 tags:
-  - "Git"
-  - "Tig"
-  # - "Web Development"
+  - "git"
+  - "tig"
 description: "리눅스에서 git을 쓰다 보면 GUI가 없는 구조이기 때문에 답답할 때가 있다. 가령 특정 파일의 변경 이력을 추적할 때 터미널에서 보여지는 일반적인 화면으로는 그 내용을 파악하기가 쉽지않다.
 이를 극복할 수 있게 도와주는 툴이 바로 Tig이다."
 socialImage: "/media/42-line-bible.jpg"
 ---
-
-<!-- - [The first transition](#the-first-transition)
-- [The digital age](#the-digital-age)
-- [Loss of humanity through transitions](#loss-of-humanity-through-transitions)
-- [Chasing perfection](#chasing-perfection) -->
 
 ## 1. Tig: text-mode interface for Git
 

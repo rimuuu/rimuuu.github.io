@@ -4,11 +4,10 @@ date: "2020-05-01T07:12:03.284Z"
 template: "post"
 draft: false
 slug: "linux/200501/"
-category: "Linux"
+category: "linux"
 tags:
-  - "Linux"
-  - "Terminal"
-  # - "Web Development"
+  - "linux"
+  - "terminal"
 description: "Linux는 시스템을 운영하는데 가장 널리 사용되는 운영체제다. Windows 시스템이나 application이 아닌 이상 일반적으로 시스템 서버는 linux 기반으로 운영되고 있다. Linux에 시스템을 실행하고 유지하고 관리하기 때문에 개발자는 반드시 linux에 대해 잘 이해하고 있어야 한다."
 socialImage: "/media/42-line-bible.jpg"
 ---

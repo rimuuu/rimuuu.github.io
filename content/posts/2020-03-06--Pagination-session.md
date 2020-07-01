@@ -1,5 +1,5 @@
 ---
-title: "[React] Pagination"
+title: "[React] Pagination : 수정예정"
 date: "2020-06-03T01:00:03.284Z"
 template: "post"
 draft: false

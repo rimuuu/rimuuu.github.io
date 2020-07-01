@@ -1,14 +1,14 @@
 ---
-title: "wecode 1차 프로젝트 Subway 🥪 후기"
+title: "[project] wecode 1차 프로젝트 Subway 🥪 후기"
 date: "2020-06-07T01:00:03.284Z"
 template: "post"
 draft: false
 slug: "review/200607"
-category: "team project"
+category: "team-project"
 tags:
-  - "team project"
+  - "team-project"
 
-description: ""
+description: "추억만 남은 서브웨이 프로젝트를 회고하며"
 ---
 
 ## 1. 진행한 프로젝트 소개

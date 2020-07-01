@@ -1,5 +1,5 @@
 ---
-title: " [React Westagram] ⭐️ fetch() GET, POST  (회원가입,로그인,피드 댓글 불러오기 기능) "
+title: " [인스타클론] ⭐️ fetch() GET, POST  (회원가입,로그인,피드 댓글 불러오기 기능) "
 date: "2020-05-24T02:12:03.284Z"
 template: "post"
 draft: false

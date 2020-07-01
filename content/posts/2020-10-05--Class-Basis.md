@@ -4,9 +4,9 @@ date: "2020-05-10T01:12:03.284Z"
 template: "post"
 draft: false
 slug: "object/200510"
-category: "JavaScript"
+category: "javascript"
 tags:
-  - "JavaScript"
+  - "javascript"
 
 description: "객체(object)는 일상을 살면서 우리가 명백하게 볼 수 있고 관찰할 수 있는 대상이다.
 자동차, 자전거, 컴퓨터, 토끼, 오리, 강아지, 나무 등등 소프트웨어 세계에서는 구현할 대상을 객체라고 부른다."

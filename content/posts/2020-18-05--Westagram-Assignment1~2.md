@@ -1,5 +1,5 @@
 ---
-title: " [React Westagram] React Props & States 활용, 이벤트핸들링 "
+title: " [인스타클론] React Props & States 활용, 이벤트핸들링 "
 date: "2020-05-18T01:12:03.284Z"
 template: "post"
 draft: false
