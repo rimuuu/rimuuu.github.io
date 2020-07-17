@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://sori-kim.github.io',
   pathPrefix: '/',
-  title: 'Sori\'s develog ',
+  title: 'Inner peace',
   subtitle:
     'Junior Front-End Web Developer',
   copyright: '© All rights reserved.',
@@ -31,10 +31,20 @@ module.exports = {
     bio: '',
     contacts: {
       email: 'soriosie@gmail.com',
+      facebook: '#',
+      telegram: '#',
       twitter: '#',
       github: 'https://github.com/sori-kim',
+      rss: '',
+      vkontakte: '',
       linkedin: '#',
       instagram: 'x.xiaori',
+      line: '',
+      gitlab: '',
+      weibo: '',
+      codepen: '',
+      youtube: '',
+      soundcloud: '',
     },
   },
 };

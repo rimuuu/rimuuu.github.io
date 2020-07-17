@@ -17,4 +17,4 @@ description: "타입스크립트를 배우면서 처음 접하는 Generics에 �
 
 ## 함수에서 Generics 사용하기
 
-예
+추가예정

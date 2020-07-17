@@ -204,4 +204,4 @@ ninja = { name: "yoshi", age: 25 };
 
 <br>
 
-_이글은 The Net Ninja의 [youtube]('/')와 velopert님의 typescript tutorial을 학습함며 정리한 포스팅입니다._
+_이글은 The Net Ninja의 [youtube]('/')와 velopert님의 typescript tutorial을 학습하며 정리한 포스팅입니다._
